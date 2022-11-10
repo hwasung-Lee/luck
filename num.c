@@ -3,9 +3,27 @@
 //aligator
 void one()
 {
+        printw("	::: \n"); 
+        printw("     :+:+:  \n");
+        printw("      +:+   \n");
+        printw("     +#+    \n");
+        printw("    +#+     \n");
+        printw("   #+#      \n");
+        printw("#######     \n");
 }
-void two();
-void three();
+void two()
+{
+        printw("       :::::::: \n");
+        printw("     :+:    :+: \n");
+        printw("          +:+   \n");
+        printw("       +#+      \n");
+        printw("    +#+         \n");
+        printw("  #+#           \n");
+        printw("##########      \n");
+}
+void three()
+{
+}
 void four()
 {      
         printw("          :::\n");
