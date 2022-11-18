@@ -1,94 +1,10 @@
-#include <ncurses.c>
-
-//aligator
-void one()
-{
-        printw("	::: \n"); 
-        printw("     :+:+:  \n");
-        printw("      +:+   \n");
-        printw("     +#+    \n");
-        printw("    +#+     \n");
-        printw("   #+#      \n");
-        printw("#######     \n");
-}
-void two()
-{
-        printw("       :::::::: \n");
-        printw("     :+:    :+: \n");
-        printw("          +:+   \n");
-        printw("       +#+      \n");
-        printw("    +#+         \n");
-        printw("  #+#           \n");
-        printw("##########      \n");
-}
-void three()
-{
-	printw("      ::::::::\n"); 
-	printw("    :+:    :+:\n");
-	printw("          +:+ \n"); 
-	printw("      +#++:   \n"); 
-	printw("        +#+   \n"); 
-	printw("#+#    #+#    \n"); 
-	printw("########      \n"); 
-}
-void four()
-{      
-        printw("          :::\n");
-        printw("        :+:  \n");
-        printw("       +:+ +:+ \n");
-        printw("     +#+  +:+  \n");
-        printw("   +#+#+#+#+#+\n");
-        printw("        #+#   \n");
-        printw("       ###    \n");
-}
-void five()
-{
-        printw("     :::::::::: \n");
-        printw("    :+:    :+:  \n");
-        printw("   +:+          \n");
-        printw("  +#++:++#+     \n");
-        printw("        +#+     \n");
-        printw("#+#    #+#      \n");
-        printw("########        \n");
-}
-void six()
-{
-        printw("      :::::::: \n");
-        printw("    :+:    :+: \n");
-        printw("   +:+         \n");
-        printw("  +#++:++#+    \n");
-        printw(" +#+    +#+    \n");
-        printw("#+#    #+#     \n");
-        printw("########       \n");
-}
-void seven()
-{
-        printw("  ::::::::::: \n");
-        printw(" :+:     :+:  \n");
-        printw("       +:+    \n");
-        printw("     +#+      \n");
-        printw("   +#+        \n");
-        printw(" #+#          \n");
-        printw("###           \n");
-}
-void eight()
-{
-        printw("      :::::::: \n");
-        printw("    :+:    :+: \n");
-        printw("   +:+    +:+  \n");
-        printw("   +#++:++#    \n");
-        printw(" +#+    +#+    \n");
-        printw("#+#    #+#     \n");
-        printw("########       \n");
-}
-void nine()
-{
-        printw("      :::::::: \n");
-        printw("    :+:    :+: \n");
-        printw("   +:+    +:+  \n");
-        printw("   +#++:++#+   \n");
-        printw("        +#+    \n");
-        printw("#+#    #+#     \n");
-        printw("########       \n");
-
-}
+int num(int n);
+void one();
+void two();
+void three();
+void four();
+void five();
+void six();
+void seven();
+void eight();
+void nine();
