@@ -14,17 +14,17 @@ int main()
 	WINDOW *w1,*w2,*w3;
 	srand(time(NULL));
 
-	for(int i=0;i<=2;i++)
-	{
-		n[i]=rand()%10;
-	}
-	
 	initscr();
 	noecho();
 	w1=newwin(10,19,0,0);
 	w2=newwin(10,19,0,18);
 	w3=newwin(10,19,0,36);
 start:	
+	for(int i=0;i<=2;i++)
+	{
+		n[i]=rand()%10;
+	}
+	
 	refresh();
 	num(w1,1);
 	num(w2,1);
