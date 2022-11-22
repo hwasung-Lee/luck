@@ -2,142 +2,142 @@
 #include <ncurses.h>
 
 //aligator
-int num(int n)
+int num(WINDOW* win, int n)
 {
+	wprintw(win,"\n");
 	if(n==1)
 	{
-		one();
+		one(win);
 		return 0;
 	}
 	if(n==2)
 	{
-                two();
+                two(win);
                 return 0;
         }
 	if(n==3)
 	{
-                three();
+                three(win);
                 return 0;
         }
 	if(n==4)
 	{
-                four();
+                four(win);
                 return 0;
         }
 	if(n==5)
 	{
-                five();
+                five(win);
                 return 0;
         }
 	if(n==6)
 	{
-                six();
+                six(win);
                 return 0;
         }
 	if(n==7)
 	{
-		seven();
+		seven(win);
                 return 0;
         }
 	if(n==8)
 	{
-		eight();
+		eight(win);
                 return 0;
 	}
 	if(n==9)
 	{
-		nine();
+		nine(win);
                 return 0;
 	}
 }
-void one()
+void one(WINDOW* win)
 {
-        printw("	::: \n"); 
-        printw("     :+:+:  \n");
-        printw("      +:+   \n");
-        printw("     +#+    \n");
-        printw("    +#+     \n");
-        printw("   #+#      \n");
-        printw("#######     \n");
+        wprintw(win, "\n            ::: \n"); 
+        wprintw(win, "        :+:+:+  \n");
+        wprintw(win, "          +#+   \n");
+        wprintw(win, "         +#+    \n");
+        wprintw(win, "        #+#     \n");
+        wprintw(win, "     #######    \n");
 }
-void two()
+void two(WINDOW* win)
 {
-        printw("       :::::::: \n");
-        printw("     :+:    :+: \n");
-        printw("          +:+   \n");
-        printw("       +#+      \n");
-        printw("    +#+         \n");
-        printw("  #+#           \n");
-        printw("##########      \n");
+        wprintw(win, "         :::::::: \n");
+        wprintw(win, "       :+:    :+: \n");
+        wprintw(win, "            +:+   \n");
+        wprintw(win, "         +#+      \n");
+        wprintw(win, "      +#+         \n");
+        wprintw(win, "    #+#           \n");
+        wprintw(win, "  ##########      \n");
 }
-void three()
+void three(WINDOW* win)
 {
-	printw("      ::::::::\n"); 
-	printw("    :+:    :+:\n");
-	printw("          +:+ \n"); 
-	printw("      +#++:   \n"); 
-	printw("        +#+   \n"); 
-	printw("#+#    #+#    \n"); 
-	printw("########      \n"); 
+	wprintw(win, "        :::::::: \n"); 
+	wprintw(win, "      :+:    :+: \n");
+	wprintw(win, "            +:+  \n"); 
+	wprintw(win, "        +#++:    \n"); 
+	wprintw(win, "          +#+    \n"); 
+	wprintw(win, "  #+#    #+#     \n"); 
+	wprintw(win, "  ########       \n"); 
 }
-void four()
+void four(WINDOW* win)
 {      
-        printw("       :::\n");
-        printw("     :+:  \n");
-        printw("    +:+ +:+ \n");
-        printw("  +#+  +:+  \n");
-        printw("+#+#+#+#+#+\n");
-        printw("     #+#   \n");
-        printw("    ###    \n");
+        wprintw(win, "         :::     \n");
+        wprintw(win, "       :+:       \n");
+        wprintw(win, "      +:+ +:+    \n");
+        wprintw(win, "    +#+  +:+     \n");
+        wprintw(win, "  +#+#+#+#+#+    \n");
+        wprintw(win, "       #+#       \n");
+        wprintw(win, "      ###        \n");
 }
-void five()
+void five(WINDOW* win)
 {
-        printw("     :::::::::: \n");
-        printw("    :+:    :+:  \n");
-        printw("   +:+          \n");
-        printw("  +#++:++#+     \n");
-        printw("        +#+     \n");
-        printw("#+#    #+#      \n");
-        printw("########        \n");
+        wprintw(win, "       ::::::::::\n");
+        wprintw(win, "      :+:    :+: \n");
+        wprintw(win, "     +:+         \n");
+        wprintw(win, "    +#++:++#+    \n");
+        wprintw(win, "          +#+    \n");
+        wprintw(win, "  #+#    #+#     \n");
+        wprintw(win, "  ########       \n");
 }
-void six()
+void six(WINDOW* win)
 {
-        printw("      :::::::: \n");
-        printw("    :+:    :+: \n");
-        printw("   +:+         \n");
-        printw("  +#++:++#+    \n");
-        printw(" +#+    +#+    \n");
-        printw("#+#    #+#     \n");
-        printw("########       \n");
+        wprintw(win, "        :::::::: \n");
+        wprintw(win, "      :+:    :+: \n");
+        wprintw(win, "     +:+         \n");
+        wprintw(win, "    +#++:++#+    \n");
+        wprintw(win, "   +#+    +#+    \n");
+        wprintw(win, "  #+#    #+#     \n");
+        wprintw(win, "  ########       \n");
 }
-void seven()
+void seven(WINDOW* win)
 {
-        printw("  ::::::::::: \n");
-        printw(" :+:     :+:  \n");
-        printw("       +:+    \n");
-        printw("     +#+      \n");
-        printw("   +#+        \n");
-        printw(" #+#          \n");
-        printw("###           \n");
+        wprintw(win, "    :::::::::::  \n");
+        wprintw(win, "   :+:     :+:   \n");
+        wprintw(win, "         +:+     \n");
+        wprintw(win, "       +#+       \n");
+        wprintw(win, "     +#+         \n");
+        wprintw(win, "   #+#           \n");
+        wprintw(win, "  ###            \n");
 }
-void eight()
+void eight(WINDOW* win)
 {
-        printw("      :::::::: \n");
-        printw("    :+:    :+: \n");
-        printw("   +:+    +:+  \n");
-        printw("   +#++:++#    \n");
-        printw(" +#+    +#+    \n");
-        printw("#+#    #+#     \n");
-        printw("########       \n");
+        wprintw(win, "        :::::::: \n");
+        wprintw(win, "      :+:    :+: \n");
+        wprintw(win, "     +:+    +:+  \n");
+        wprintw(win, "     +#++:++#    \n");
+        wprintw(win, "   +#+    +#+    \n");
+        wprintw(win, "  #+#    #+#     \n");
+        wprintw(win, "  ########       \n");
 }
-void nine()
+void nine(WINDOW* win)
 {
-        printw("      :::::::: \n");
-        printw("    :+:    :+: \n");
-        printw("   +:+    +:+  \n");
-        printw("   +#++:++#+   \n");
-        printw("        +#+    \n");
-        printw("#+#    #+#     \n");
-        printw("########       \n");
+        wprintw(win, "        :::::::: \n");
+        wprintw(win, "      :+:    :+: \n");
+        wprintw(win, "     +:+    +:+  \n");
+        wprintw(win, "     +#++:++#+   \n");
+        wprintw(win, "          +#+    \n");
+        wprintw(win, "  #+#    #+#     \n");
+        wprintw(win, "  ########       \n");
 
 }

@@ -1,12 +1,12 @@
 CC=gcc
 lib=-lcurses 
 
-luck: main.o num.o main.c num.c num.o
+luck: main.o num.o
 	$(CC) main.o num.o -o luck $(lib) -g
-num.o: 
+num.o: num.c num.h
 	$(CC) num.c -c num.o $(lib) -g
 
-main.o: 
+main.o: main.c
 	$(CC) main.c -c main.o $(lib) -g
 
 clean:
